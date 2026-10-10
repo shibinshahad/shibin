@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lmsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141029"/>
+      <stop offset="100%" stop-color="#0a0b14"/>
+    </linearGradient>
+    <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#231d3f"/>
+      <stop offset="100%" stop-color="#131224"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="350" rx="16" fill="url(#lmsBg)"/>
+  
+  <!-- Subtle Grid lines -->
+  <g stroke="rgba(139, 92, 246, 0.1)" stroke-width="1">
+    <line x1="0" y1="70" x2="600" y2="70"/>
+    <line x1="0" y1="140" x2="600" y2="140"/>
+    <line x1="0" y1="210" x2="600" y2="210"/>
+    <line x1="0" y1="280" x2="600" y2="280"/>
+  </g>
+
+  <!-- LMS Application Window Mockup -->
+  <g transform="translate(40, 30)">
+    <!-- Browser/App Header -->
+    <rect width="520" height="290" rx="12" fill="url(#cardGrad)" stroke="rgba(139, 92, 246, 0.3)" stroke-width="1.5"/>
+    <rect width="520" height="40" rx="12" fill="#18152e"/>
+    <!-- Window buttons -->
+    <circle cx="25" cy="20" r="5" fill="#ef4444"/>
+    <circle cx="42" cy="20" r="5" fill="#f59e0b"/>
+    <circle cx="59" cy="20" r="5" fill="#10b981"/>
+    <!-- Address bar mockup -->
+    <rect x="85" y="10" width="220" height="20" rx="6" fill="#0d0e17"/>
+    <text x="98" y="24" fill="#a78bfa" font-family="monospace" font-size="10">softroniics-lms.edu/portal</text>
+    <rect x="420" y="12" width="75" height="16" rx="8" fill="url(#purpleGradient)"/>
+    <text x="432" y="24" fill="#ffffff" font-family="sans-serif" font-size="9" font-weight="bold">STUDENT</text>
+
+    <!-- Sidebar Mockup -->
+    <rect x="15" y="55" width="110" height="215" rx="8" fill="#17142a"/>
+    <rect x="25" y="70" width="75" height="12" rx="4" fill="#8b5cf6" opacity="0.8"/>
+    <rect x="25" y="95" width="90" height="8" rx="3" fill="#64748b" opacity="0.4"/>
+    <rect x="25" y="115" width="80" height="8" rx="3" fill="#64748b" opacity="0.4"/>
+    <rect x="25" y="135" width="85" height="8" rx="3" fill="#64748b" opacity="0.4"/>
+    <rect x="25" y="155" width="70" height="8" rx="3" fill="#64748b" opacity="0.4"/>
+    <rect x="25" y="235" width="90" height="20" rx="6" fill="#8b5cf6" opacity="0.3"/>
+
+    <!-- Dashboard Content Area -->
+    <!-- Course Banner -->
+    <rect x="140" y="55" width="365" height="75" rx="8" fill="url(#purpleGradient)" opacity="0.9"/>
+    <text x="158" y="85" fill="#ffffff" font-family="sans-serif" font-size="15" font-weight="bold">Softroniics Learning Hub</text>
+    <text x="158" y="105" fill="#e9d5ff" font-family="sans-serif" font-size="11">Data Science &amp; Full-Stack Tracks Active</text>
+    
+    <!-- Video Player / Card 1 -->
+    <rect x="140" y="145" width="175" height="125" rx="8" fill="#19172f" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <!-- Video preview box -->
+    <rect x="150" y="155" width="155" height="70" rx="6" fill="#0d0e18"/>
+    <!-- Play button -->
+    <polygon points="222,183 235,190 222,197" fill="#8b5cf6"/>
+    <rect x="150" y="235" width="90" height="8" rx="3" fill="#e2e8f0"/>
+    <rect x="150" y="250" width="130" height="6" rx="3" fill="#8b5cf6"/>
+
+    <!-- Stats / Progress Card 2 -->
+    <rect x="330" y="145" width="175" height="125" rx="8" fill="#19172f" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    <text x="345" y="170" fill="#ffffff" font-family="sans-serif" font-size="12" font-weight="bold">Course Progress</text>
+    <!-- Circular progress ring -->
+    <circle cx="417" cy="215" r="30" fill="none" stroke="#2c2a47" stroke-width="6"/>
+    <circle cx="417" cy="215" r="30" fill="none" stroke="#a855f7" stroke-width="6" stroke-dasharray="140" stroke-dashoffset="35"/>
+    <text x="405" y="220" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="bold">78%</text>
+    <text x="365" y="260" fill="#94a3b8" font-family="sans-serif" font-size="9">Module 5 Completed</text>
+  </g>
+</svg>

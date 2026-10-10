@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <!-- ===================================================================
+       BEGINNER WORKSHOP PORTFOLIO TEMPLATE
+       Created for: MUHAMMED SHIBIN SHAHAD M (Data Science Intern)
+       Technologies: HTML5, CSS3, Bootstrap 5, Vanilla JavaScript
+       Customization: Search for comments labeled "CUSTOMIZE HERE"
+       =================================================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>Muhammed Shibin Shahad M | Data Science Intern & Developer</title>
+  <meta name="description"
+    content="Personal portfolio of Muhammed Shibin Shahad M - Data Science Intern, Python Developer, and Flutter Enthusiast. Explore my projects, skills, education, and contact details.">
+  <meta name="keywords"
+    content="Muhammed Shibin Shahad M, Data Science Intern, Portfolio, Softroniics, Python, Flutter, Web Developer">
+  <meta name="author" content="Muhammed Shibin Shahad M">
+
+  <!-- Favicon (SVG data URI for instant crisp icon) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%238b5cf6'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-size='48' font-weight='bold'>S</text></svg>">
+
+  <!-- Google Fonts: Outfit (Headings) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Font Awesome 6 Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- COLOR CORRECTION FIX: Inlined Dark Theme Protection -->
+  <style>
+    /* ==============================================================
+   COLOR CORRECTION FIX: GUARANTEED OBSIDIAN DARK THEME
+   Ensures 100% dark background and high-contrast text across all sections
+   ============================================================== */
+    :root {
+      --bg-main: #07080d !important;
+      --bg-subtle: #0d0f17 !important;
+      --bg-card: #11131c !important;
+      --bg-card-hover: #161926 !important;
+      --bg-glass: rgba(17, 19, 28, 0.85) !important;
+      --text-primary: #f8fafc !important;
+      --text-secondary: #cbd5e1 !important;
+      --text-muted: #94a3b8 !important;
+      --accent-purple: #8b5cf6 !important;
+      --accent-cyan: #38bdf8 !important;
+      --accent-indigo: #6366f1 !important;
+      --border-glass: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+
+    html,
+    body {
+      background-color: #07080d !important;
+      color: #f8fafc !important;
+      min-height: 100vh;
+    }
+
+    /* Sections & Cards Dark Background Overrides */
+    section,
+    header,
+    footer,
+    .timeline,
+    .timeline-content,
+    .timeline-card,
+    .card,
+    .glass-card,
+    .service-card,
+    .project-card,
+    .skill-card,
+    .modal-content {
+      background-color: #11131c !important;
+      color: #f8fafc !important;
+    }
+
+    /* High Contrast Headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .card-title,
+    .project-title,
+    .timeline-title {
+      color: #ffffff !important;
+    }
+
+    /* High Contrast Paragraphs & Lists */
+    p,
+    .text-secondary,
+    .timeline-desc,
+    .project-desc,
+    .card-text {
+      color: #cbd5e1 !important;
+    }
+
+    .text-muted {
+      color: #94a3b8 !important;
+    }
+
+    /* Education Timeline High Visibility */
+    .timeline-item,
+    .timeline-content {
+      background: #11131c !important;
+      border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    }
+
+    .timeline-institution {
+      color: #38bdf8 !important;
+      font-weight: 600;
+    }
+
+    .timeline-year {
+      color: #a855f7 !important;
+      background: rgba(168, 85, 247, 0.15) !important;
+      border: 1px solid rgba(168, 85, 247, 0.3) !important;
+    }
+
+    /* Contact Section & Form Controls */
+    .form-control,
+    .form-control:focus,
+    textarea,
+    input {
+      background-color: #0d0f17 !important;
+      border: 1px solid rgba(255, 255, 255, 0.15) !important;
+      color: #ffffff !important;
+    }
+
+    .form-control::placeholder {
+      color: #64748b !important;
+    }
+  </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="80" tabindex="0">
+
+  <!-- ==========================================
+       BACKGROUND AMBIENT GLOW EFFECTS
+       ========================================== -->
+  <div class="glow-orb orb-1" aria-hidden="true"></div>
+  <div class="glow-orb orb-2" aria-hidden="true"></div>
+  <div class="glow-orb orb-3" aria-hidden="true"></div>
+
+  <!-- ==========================================
+       1. NAVIGATION BAR
+       ========================================== -->
+  <header>
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top py-3 transition-nav">
+      <div class="container">
+        <!-- Logo / Brand Name -->
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
+          <span class="brand-symbol">&lt;/&gt;</span>
+          <span class="brand-text">SHIBIN<span class="accent-text">.DEV</span></span>
+        </a>
+
+        <!-- Mobile Hamburger Toggler -->
+        <button class="navbar-toggler custom-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Nav Action CTA Button -->
+          <div class="d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+            <a href="#contact" class="btn btn-outline-gradient btn-sm px-3 py-2 rounded-pill">
+              <i class="fa-regular fa-paper-plane me-1"></i> Let's Talk
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         2. HERO SECTION
+         ========================================== -->
+    <section id="hero" class="hero-section min-vh-100 d-flex align-items-center position-relative">
+      <div class="container py-5 mt-5">
+        <div class="row align-items-center gy-5">
+          <!-- Hero Text Content -->
+          <div class="col-lg-7 text-center text-lg-start order-2 order-lg-1">
+            <!-- Status Badge -->
+            <div class="d-inline-flex align-items-center gap-2 px-3 py-1 mb-3 rounded-pill status-pill">
+              <span class="status-dot"></span>
+              <span class="status-text">Available for Projects & Internships</span>
+            </div>
+
+            <!-- Greeting & Personal Name -->
+            <h1 class="hero-title display-4 fw-extrabold mb-2">
+              Hi, I'm <br class="d-none d-sm-block">
+              <span class="text-gradient">MUHAMMED SHIBIN SHAHAD M</span>
+            </h1>
+
+            <!-- Animated Typing Role Subtitle -->
+            <div
+              class="hero-subtitle-wrapper mb-3 d-flex align-items-center justify-content-center justify-content-lg-start gap-2">
+              <span class="text-light-secondary fs-5">I am a</span>
+              <span id="typing-text" class="role-badge fs-5 fw-bold text-accent">DATA SCIENCE INTERN</span>
+              <span class="cursor-blink">|</span>
+            </div>
+
+            <!-- Short Introduction -->
+            <p class="hero-lead lead text-light-muted mb-4 pe-lg-4">
+              Passionate Data Science Intern and developer dedicated to turning complex data into actionable insights
+              and crafting modern, user-friendly applications with Python, Flutter, and web technologies.
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start mb-4">
+              <a href="#projects" class="btn btn-primary-gradient px-4 py-3 rounded-pill fw-semibold shadow-lg">
+                <i class="fa-solid fa-code me-2"></i> View My Work
+              </a>
+              <a href="#contact" class="btn btn-secondary-glass px-4 py-3 rounded-pill fw-semibold">
+                <i class="fa-regular fa-envelope me-2"></i> Contact Me
+              </a>
+              <a href="#about" class="btn btn-outline-light-custom px-4 py-3 rounded-pill fw-semibold" title="View Bio">
+                <i class="fa-regular fa-user me-2"></i> About Me
+              </a>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="hero-socials d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
+              <span class="text-light-subtle small text-uppercase tracking-wide me-1">Connect with me:</span>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box"
+                aria-label="GitHub Profile" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box"
+                aria-label="LinkedIn Profile" title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box"
+                aria-label="Instagram Profile" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="mailto:shibinshahad@example.com" class="social-icon-box" aria-label="Send Email" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Visual & Avatar Card -->
+          <div class="col-lg-5 text-center order-1 order-lg-2">
+            <div class="hero-avatar-wrapper position-relative mx-auto">
+              <!-- Glow backdrop -->
+              <div class="avatar-glow" aria-hidden="true"></div>
+
+              <!-- Main Avatar Card Frame -->
+              <div class="avatar-card p-2 p-md-3">
+                <img src="./assets/images/avatar.jpg" alt="Muhammed Shibin Shahad M - Data Science Intern"
+                  class="img-fluid rounded-4 avatar-img shadow-2xl" id="profile-img">
+              </div>
+
+              <!-- Floating Micro Badge 1: Data Science -->
+              <div class="floating-badge badge-top-right">
+                <span class="badge-icon"><i class="fa-solid fa-chart-line"></i></span>
+                <div class="text-start">
+                  <div class="badge-title">Data Science</div>
+                  <div class="badge-sub">Python & Analytics</div>
+                </div>
+              </div>
+
+              <!-- Floating Micro Badge 2: Flutter -->
+              <div class="floating-badge badge-bottom-left">
+                <span class="badge-icon flutter-icon"><i class="fa-brands fa-flutter"></i></span>
+                <div class="text-start">
+                  <div class="badge-title">App Developer</div>
+                  <div class="badge-sub">Flutter & Mobile</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Down Indicator -->
+        <div class="text-center mt-4 d-none d-md-block">
+          <a href="#about" class="scroll-down-link text-light-muted text-decoration-none"
+            aria-label="Scroll to About section">
+            <span class="d-block small mb-1">Scroll Down</span>
+            <i class="fa-solid fa-chevron-down bounce-animation"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. ABOUT ME SECTION
+         ========================================== -->
+    <section id="about" class="py-5 section-offset">
+      <div class="container py-lg-4">
+        <!-- Section Title Header -->
+        <div class="section-header text-center mb-5">
+          <div class="section-tag mb-2">DISCOVER MY STORY</div>
+          <h2 class="section-title fw-bold">About <span class="text-gradient">Me</span></h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="section-subtitle text-light-muted mt-3 mx-auto">
+            Driven by curiosity, powered by code, and inspired by data-driven possibilities.
+          </p>
+        </div>
+
+        <div class="row gy-4 align-items-center">
+          <!-- Left Column: Bio Details -->
+          <div class="col-lg-6">
+            <div class="about-card p-4 p-md-5 h-100">
+              <h3 class="h4 fw-bold text-light mb-3">
+                Hello! I am <span class="text-accent">Muhammed Shibin Shahad M</span>
+              </h3>
+              <p class="text-light-secondary leading-relaxed mb-3">
+                I am an enthusiastic <strong>Data Science Intern</strong> and passionate software developer with a
+                strong foundation in programming, logical problem solving, and modern UI engineering. Currently
+                expanding my expertise through practical, hands-on development in Python, web architecture, and
+                cross-platform mobile apps.
+              </p>
+              <p class="text-light-secondary leading-relaxed mb-4">
+                <strong>Career Goals:</strong> My objective is to bridge the gap between intelligent data models and
+                beautiful, accessible user applications. I strive to grow into an innovative full-stack data engineer
+                who solves high-impact real-world problems.
+              </p>
+
+              <!-- Highlights List -->
+              <div class="row g-3 mb-4">
+                <div class="col-sm-6">
+                  <div class="about-feature-item d-flex align-items-center gap-3 p-3 rounded-3">
+                    <div class="feature-icon-circle"><i class="fa-solid fa-brain"></i></div>
+                    <div>
+                      <h6 class="mb-0 text-light fw-semibold">Analytical Mind</h6>
+                      <small class="text-light-muted">Data & ML Enthusiast</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="about-feature-item d-flex align-items-center gap-3 p-3 rounded-3">
+                    <div class="feature-icon-circle"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div>
+                      <h6 class="mb-0 text-light fw-semibold">Full-Stack Craft</h6>
+                      <small class="text-light-muted">Clean & Responsive UI</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="about-feature-item d-flex align-items-center gap-3 p-3 rounded-3">
+                    <div class="feature-icon-circle"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <div>
+                      <h6 class="mb-0 text-light fw-semibold">Mobile Apps</h6>
+                      <small class="text-light-muted">Flutter & Cross-Platform</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="about-feature-item d-flex align-items-center gap-3 p-3 rounded-3">
+                    <div class="feature-icon-circle"><i class="fa-solid fa-rocket"></i></div>
+                    <div>
+                      <h6 class="mb-0 text-light fw-semibold">Continuous Learner</h6>
+                      <small class="text-light-muted">Always Curious & Agile</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Info & Resume Buttons -->
+              <div class="d-flex flex-wrap align-items-center gap-3">
+                <a href="#contact" class="btn btn-primary-gradient px-4 py-2 rounded-pill fw-semibold">
+                  <i class="fa-solid fa-handshake me-2"></i> Hire / Collaborate
+                </a>
+                <a href="#projects" class="btn btn-outline-light-custom px-4 py-2 rounded-pill fw-semibold">
+                  <i class="fa-solid fa-layer-group me-2"></i> Explore Projects
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Personal Stats & Quick Facts -->
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <!-- Stat Card 1 -->
+              <div class="col-6">
+                <div class="stat-card p-4 text-center rounded-4 h-100">
+                  <div class="stat-icon-wrapper mb-2 text-accent">
+                    <i class="fa-solid fa-folder-tree fa-2x"></i>
+                  </div>
+                  <h3 class="stat-number fw-bold text-light mb-1">3+</h3>
+                  <p class="stat-label text-light-muted small mb-0">Featured Projects</p>
+                </div>
+              </div>
+
+              <!-- Stat Card 2 -->
+              <div class="col-6">
+                <div class="stat-card p-4 text-center rounded-4 h-100">
+                  <div class="stat-icon-wrapper mb-2 text-cyan">
+                    <i class="fa-solid fa-code-branch fa-2x"></i>
+                  </div>
+                  <h3 class="stat-number fw-bold text-light mb-1">7+</h3>
+                  <p class="stat-label text-light-muted small mb-0">Core Tech Stacks</p>
+                </div>
+              </div>
+
+              <!-- Stat Card 3 -->
+              <div class="col-6">
+                <div class="stat-card p-4 text-center rounded-4 h-100">
+                  <div class="stat-icon-wrapper mb-2 text-purple">
+                    <i class="fa-solid fa-graduation-cap fa-2x"></i>
+                  </div>
+                  <h3 class="stat-number fw-bold text-light mb-1">Softroniics</h3>
+                  <p class="stat-label text-light-muted small mb-0">Internship Training</p>
+                </div>
+              </div>
+
+              <!-- Stat Card 4 -->
+              <div class="col-6">
+                <div class="stat-card p-4 text-center rounded-4 h-100">
+                  <div class="stat-icon-wrapper mb-2 text-success">
+                    <i class="fa-solid fa-clock-rotate-left fa-2x"></i>
+                  </div>
+                  <h3 class="stat-number fw-bold text-light mb-1">100%</h3>
+                  <p class="stat-label text-light-muted small mb-0">Dedication & Growth</p>
+                </div>
+              </div>
+
+              <!-- Personal Information Box -->
+              <div class="col-12">
+                <div class="personal-info-card p-4 rounded-4 mt-2">
+                  <h5 class="fw-bold text-light mb-3">Quick Overview</h5>
+                  <div class="row g-2">
+                    <div class="col-sm-6 d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-user text-accent"></i>
+                      <span class="text-light-muted">Name:</span>
+                      <span class="text-light fw-medium">Muhammed Shibin</span>
+                    </div>
+                    <div class="col-sm-6 d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-briefcase text-accent"></i>
+                      <span class="text-light-muted">Role:</span>
+                      <span class="text-light fw-medium">Data Science Intern</span>
+                    </div>
+                    <div class="col-sm-6 d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-location-dot text-accent"></i>
+                      <span class="text-light-muted">Location:</span>
+                      <span class="text-light fw-medium">Kerala, India</span>
+                    </div>
+                    <div class="col-sm-6 d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-envelope text-accent"></i>
+                      <span class="text-light-muted">Email:</span>
+                      <span class="text-light fw-medium">shibinshahad@example.com</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. SKILLS SECTION
+         ========================================== -->
+    <section id="skills" class="py-5 section-offset bg-subtle">
+      <div class="container py-lg-4">
+        <!-- Section Title Header -->
+        <div class="section-header text-center mb-5">
+          <div class="section-tag mb-2">MY CAPABILITIES</div>
+          <h2 class="section-title fw-bold">Technical <span class="text-gradient">Skills</span></h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="section-subtitle text-light-muted mt-3 mx-auto">
+            A comprehensive overview of the programming languages, tools, frameworks, and methodologies I leverage to
+            build solutions.
+          </p>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="row g-4">
+          <!-- Skill Item 1: Python -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card p-4 rounded-4 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="skill-icon-box text-warning">
+                  <i class="fa-brands fa-python fa-2x"></i>
+                </div>
+                <span class="badge skill-badge">Core Language</span>
+              </div>
+              <h5 class="fw-bold text-light mb-1">Python</h5>
+              <p class="text-light-muted small mb-3">Data manipulation, scripting, algorithms, and backend development.
+              </p>
+              <div class="skill-progress-wrapper">
+                <div class="d-flex justify-content-between small text-light-secondary mb-1">
+                  <span>Proficiency</span>
+                  <span class="fw-bold text-accent">90%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-accent-gradient" role="progressbar" style="width: 90%" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Item 2: Data Science & ML -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card p-4 rounded-4 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="skill-icon-box text-accent">
+                  <i class="fa-solid fa-chart-pie fa-2x"></i>
+                </div>
+                <span class="badge skill-badge">Analytics</span>
+              </div>
+              <h5 class="fw-bold text-light mb-1">Data Science</h5>
+              <p class="text-light-muted small mb-3">Pandas, NumPy, Matplotlib, Data Cleaning, and ML foundations.</p>
+              <div class="skill-progress-wrapper">
+                <div class="d-flex justify-content-between small text-light-secondary mb-1">
+                  <span>Proficiency</span>
+                  <span class="fw-bold text-accent">85%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-accent-gradient" role="progressbar" style="width: 85%" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Item 3: Flutter -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card p-4 rounded-4 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="skill-icon-box text-cyan">
+                  <i class="fa-brands fa-flutter fa-2x"></i>
+                </div>
+                <span class="badge skill-badge">Mobile App</span>
+              </div>
+              <h5 class="fw-bold text-light mb-1">Flutter & Dart</h5>
+              <p class="text-light-muted small mb-3">Cross-platform Android & iOS development with state management.</p>
+              <div class="skill-progress-wrapper">
+                <div class="d-flex justify-content-between small text-light-secondary mb-1">
+                  <span>Proficiency</span>
+                  <span class="fw-bold text-accent">80%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-accent-gradient" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Item 4: HTML5 & CSS3 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card p-4 rounded-4 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="skill-icon-box text-danger">
+                  <i class="fa-brands fa-html5 fa-2x"></i>
+                </div>
+                <span class="badge skill-badge">Frontend</span>
+              </div>
+              <h5 class="fw-bold text-light mb-1">HTML5 & CSS3</h5>
+              <p class="text-light-muted small mb-3">Semantic markup, responsive layouts, CSS Flexbox, Grid, and
+                animations.</p>
+              <div class="skill-progress-wrapper">
+                <div class="d-flex justify-content-between small text-light-secondary mb-1">
+                  <span>Proficiency</span>
+                  <span class="fw-bold text-accent">95%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-accent-gradient" role="progressbar" style="width: 95%" aria-valuenow="95"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Item 5: Bootstrap 5 -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card p-4 rounded-4 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="skill-icon-box text-purple">
+                  <i class="fa-brands fa-bootstrap fa-2x"></i>
+                </div>
+                <span class="badge skill-badge">CSS Framework</span>
+              </div>
+              <h5 class="fw-bold text-light mb-1">Bootstrap 5</h5>
+              <p class="text-light-muted small mb-3">Mobile-first grid system, components, utility classes, and theming.
+              </p>
+              <div class="skill-progress-wrapper">
+                <div class="d-flex justify-content-between small text-light-secondary mb-1">
+                  <span>Proficiency</span>
+                  <span class="fw-bold text-accent">90%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-accent-gradient" role="progressbar" style="width: 90%" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Item 6: JavaScript -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card p-4 rounded-4 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="skill-icon-box text-warning">
+                  <i class="fa-brands fa-square-js fa-2x"></i>
+                </div>
+                <span class="badge skill-badge">Logic & Interactivity</span>
+              </div>
+              <h5 class="fw-bold text-light mb-1">JavaScript</h5>
+              <p class="text-light-muted small mb-3">ES6+ syntax, DOM manipulation, asynchronous programming, and APIs.
+              </p>
+              <div class="skill-progress-wrapper">
+                <div class="d-flex justify-content-between small text-light-secondary mb-1">
+                  <span>Proficiency</span>
+                  <span class="fw-bold text-accent">80%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-accent-gradient" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Item 7: Git & GitHub -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card p-4 rounded-4 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="skill-icon-box text-orange">
+                  <i class="fa-brands fa-git-alt fa-2x"></i>
+                </div>
+                <span class="badge skill-badge">Version Control</span>
+              </div>
+              <h5 class="fw-bold text-light mb-1">Git & GitHub</h5>
+              <p class="text-light-muted small mb-3">Branching, merging, commit workflows, and collaborative
+                development.</p>
+              <div class="skill-progress-wrapper">
+                <div class="d-flex justify-content-between small text-light-secondary mb-1">
+                  <span>Proficiency</span>
+                  <span class="fw-bold text-accent">85%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-accent-gradient" role="progressbar" style="width: 85%" aria-valuenow="85"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill Item 8: Database & SQL -->
+          <div class="col-md-6 col-lg-3">
+            <div class="skill-card p-4 rounded-4 h-100">
+              <div class="d-flex align-items-center justify-content-between mb-3">
+                <div class="skill-icon-box text-info">
+                  <i class="fa-solid fa-database fa-2x"></i>
+                </div>
+                <span class="badge skill-badge">Data Storage</span>
+              </div>
+              <h5 class="fw-bold text-light mb-1">SQL & Databases</h5>
+              <p class="text-light-muted small mb-3">Relational database design, querying, SQLite, and Firebase
+                integration.</p>
+              <div class="skill-progress-wrapper">
+                <div class="d-flex justify-content-between small text-light-secondary mb-1">
+                  <span>Proficiency</span>
+                  <span class="fw-bold text-accent">80%</span>
+                </div>
+                <div class="progress custom-progress">
+                  <div class="progress-bar bg-accent-gradient" role="progressbar" style="width: 80%" aria-valuenow="80"
+                    aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Workshop Tip Banner -->
+        <div class="workshop-note-box p-3 rounded-3 mt-4 text-center">
+          <i class="fa-solid fa-lightbulb text-warning me-2"></i>
+          <span class="text-light-muted small"><strong>Workshop Customization Tip:</strong> You can easily add or edit
+            your skills in <code>index.html</code> inside the <code>#skills</code> section!</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         5. PROJECTS SECTION
+         ========================================== -->
+    <section id="projects" class="py-5 section-offset">
+      <div class="container py-lg-4">
+        <!-- Section Title Header -->
+        <div class="section-header text-center mb-5">
+          <div class="section-tag mb-2">MY RECENT WORK</div>
+          <h2 class="section-title fw-bold">Featured <span class="text-gradient">Projects</span></h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="section-subtitle text-light-muted mt-3 mx-auto">
+            Practical applications highlighting my expertise in full-stack architecture, cross-platform mobile
+            development, and data workflows.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Project 1: LMS - Softroniics Learning Management System -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card rounded-4 overflow-hidden h-100 d-flex flex-column">
+              <!-- Project Image Container -->
+              <div class="project-img-wrapper position-relative overflow-hidden">
+                <img src="./assets/images/lms.jpg" alt="Softroniics Learning Management System Project Screenshot"
+                  class="img-fluid w-100 project-img">
+                <div class="project-category-badge">Web Application</div>
+              </div>
+
+              <!-- Project Body -->
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h4 class="h5 fw-bold text-light mb-0">Softroniics LMS</h4>
+                  <span class="text-accent small"><i class="fa-solid fa-graduation-cap me-1"></i> Education</span>
+                </div>
+                <p class="text-light-secondary small leading-relaxed mb-3 flex-grow-1">
+                  A comprehensive Learning Management System designed to empower mentors and students with real-time
+                  course tracking, interactive video modules, digital quizzes, and student performance analytics.
+                </p>
+
+                <!-- Tech Stack Badges -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge tech-badge"><i class="fa-brands fa-python me-1"></i> Python</span>
+                  <span class="badge tech-badge"><i class="fa-brands fa-bootstrap me-1"></i> Bootstrap 5</span>
+                  <span class="badge tech-badge"><i class="fa-brands fa-js me-1"></i> JavaScript</span>
+                  <span class="badge tech-badge"><i class="fa-solid fa-database me-1"></i> SQLite</span>
+                </div>
+
+                <!-- Action Links -->
+                <div class="d-flex align-items-center gap-2 pt-2 border-top border-dark-subtle">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-light-custom btn-sm flex-fill py-2 rounded-pill">
+                    <i class="fa-brands fa-github me-1"></i> Source Code
+                  </a>
+                  <button type="button" class="btn btn-primary-gradient btn-sm flex-fill py-2 rounded-pill"
+                    data-bs-toggle="modal" data-bs-target="#projectModalLMS">
+                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> View Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: AutoResq - Mechanic Assistance App -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card rounded-4 overflow-hidden h-100 d-flex flex-column">
+              <!-- Project Image Container -->
+              <div class="project-img-wrapper position-relative overflow-hidden">
+                <img src="./assets/images/autoresq.jpg" alt="AutoResq Mechanic Assistance App Mockup"
+                  class="img-fluid w-100 project-img">
+                <div class="project-category-badge">Mobile App</div>
+              </div>
+
+              <!-- Project Body -->
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h4 class="h5 fw-bold text-light mb-0">AutoResq</h4>
+                  <span class="text-cyan small"><i class="fa-solid fa-wrench me-1"></i> Roadside Help</span>
+                </div>
+                <p class="text-light-secondary small leading-relaxed mb-3 flex-grow-1">
+                  On-demand roadside assistance mobile app connecting stranded drivers with nearby certified mechanics.
+                  Built with GPS live location dispatching, emergency SOS triggers, and vehicle recovery diagnostics.
+                </p>
+
+                <!-- Tech Stack Badges -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge tech-badge"><i class="fa-brands fa-flutter me-1"></i> Flutter</span>
+                  <span class="badge tech-badge"><i class="fa-solid fa-fire me-1"></i> Firebase</span>
+                  <span class="badge tech-badge"><i class="fa-solid fa-map-location-dot me-1"></i> Google Maps</span>
+                  <span class="badge tech-badge"><i class="fa-solid fa-bolt me-1"></i> Dart</span>
+                </div>
+
+                <!-- Action Links -->
+                <div class="d-flex align-items-center gap-2 pt-2 border-top border-dark-subtle">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-light-custom btn-sm flex-fill py-2 rounded-pill">
+                    <i class="fa-brands fa-github me-1"></i> Source Code
+                  </a>
+                  <button type="button" class="btn btn-primary-gradient btn-sm flex-fill py-2 rounded-pill"
+                    data-bs-toggle="modal" data-bs-target="#projectModalAutoResq">
+                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> View Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Blessing - Islamic Tracker -->
+          <div class="col-lg-4 col-md-6">
+            <div class="project-card rounded-4 overflow-hidden h-100 d-flex flex-column">
+              <!-- Project Image Container -->
+              <div class="project-img-wrapper position-relative overflow-hidden">
+                <img src="./assets/images/blessing.jpg" alt="Blessing Islamic Tracker Mobile App Mockup"
+                  class="img-fluid w-100 project-img">
+                <div class="project-category-badge">Lifestyle & Utilities</div>
+              </div>
+
+              <!-- Project Body -->
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h4 class="h5 fw-bold text-light mb-0">Blessing Tracker</h4>
+                  <span class="text-success small"><i class="fa-solid fa-mosque me-1"></i> Spiritual</span>
+                </div>
+                <p class="text-light-secondary small leading-relaxed mb-3 flex-grow-1">
+                  Spiritual companion application providing precise geolocation prayer times with countdowns, Qibla
+                  compass alignment, daily Quranic reflections, and personal habit tracker designed with elegant
+                  typography.
+                </p>
+
+                <!-- Tech Stack Badges -->
+                <div class="d-flex flex-wrap gap-2 mb-4">
+                  <span class="badge tech-badge"><i class="fa-brands fa-flutter me-1"></i> Flutter</span>
+                  <span class="badge tech-badge"><i class="fa-solid fa-bell me-1"></i> Local Push</span>
+                  <span class="badge tech-badge"><i class="fa-solid fa-compass me-1"></i> Compass API</span>
+                  <span class="badge tech-badge"><i class="fa-solid fa-database me-1"></i> SQLite</span>
+                </div>
+
+                <!-- Action Links -->
+                <div class="d-flex align-items-center gap-2 pt-2 border-top border-dark-subtle">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-light-custom btn-sm flex-fill py-2 rounded-pill">
+                    <i class="fa-brands fa-github me-1"></i> Source Code
+                  </a>
+                  <button type="button" class="btn btn-primary-gradient btn-sm flex-fill py-2 rounded-pill"
+                    data-bs-toggle="modal" data-bs-target="#projectModalBlessing">
+                    <i class="fa-solid fa-arrow-up-right-from-square me-1"></i> View Demo
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         6. EDUCATION & TIMELINE SECTION
+         ========================================== -->
+    <section id="education" class="py-5 section-offset bg-subtle">
+      <div class="container py-lg-4">
+        <!-- Section Title Header -->
+        <div class="section-header text-center mb-5">
+          <div class="section-tag mb-2">ACADEMIC JOURNEY</div>
+          <h2 class="section-title fw-bold">Education & <span class="text-gradient">Training</span></h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="section-subtitle text-light-muted mt-3 mx-auto">
+            My formal educational background and practical industry training experiences.
+          </p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <!-- Timeline Container -->
+            <div class="timeline-container position-relative">
+
+              <!-- Timeline Item 1: Internship Training -->
+              <div class="timeline-item position-relative mb-5">
+                <div class="timeline-marker">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="timeline-content p-4 rounded-4">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                    <span class="badge timeline-badge">2024 - Present</span>
+                    <span class="text-accent small fw-semibold"><i class="fa-solid fa-location-dot me-1"></i> Kerala,
+                      India</span>
+                  </div>
+                  <h4 class="h5 fw-bold text-light mb-1">Data Science Intern</h4>
+                  <h5 class="h6 text-accent mb-3">Softroniics Innovation Labs</h5>
+                  <p class="text-light-secondary small leading-relaxed mb-3">
+                    Undergoing intensive hands-on training in machine learning workflows, exploratory data analysis
+                    (EDA), predictive modeling, and scalable full-stack application development using Python and modern
+                    web frameworks.
+                  </p>
+                  <ul class="text-light-muted small ps-3 mb-0">
+                    <li>Developed responsive web portals and automated dashboard views for internal workflows.</li>
+                    <li>Performed statistical analysis and data visualization on structured datasets using Pandas and
+                      Seaborn.</li>
+                    <li>Collaborated in agile team sprints to build client-ready mockups and mobile app prototypes.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Timeline Item 2: Bachelor's Degree -->
+              <div class="timeline-item position-relative mb-5">
+                <div class="timeline-marker">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-content p-4 rounded-4">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                    <span class="badge timeline-badge">2021 - 2024</span>
+                    <span class="text-accent small fw-semibold"><i class="fa-solid fa-university me-1"></i> University /
+                      College</span>
+                  </div>
+                  <h4 class="h5 fw-bold text-light mb-1">Bachelor of Science in Computer Science / IT</h4>
+                  <h5 class="h6 text-accent mb-3">University Department of Computer Applications</h5>
+                  <p class="text-light-secondary small leading-relaxed mb-3">
+                    Comprehensive coursework covering core software engineering principles, Data Structures & Algorithms
+                    (DSA), Relational Database Management Systems (RDBMS), Object-Oriented Programming (OOP), and
+                    Computer Networks.
+                  </p>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span
+                      class="badge bg-dark-subtle text-light-secondary border border-secondary-subtle">Algorithms</span>
+                    <span class="badge bg-dark-subtle text-light-secondary border border-secondary-subtle">DBMS &
+                      SQL</span>
+                    <span class="badge bg-dark-subtle text-light-secondary border border-secondary-subtle">Software
+                      Engineering</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Timeline Item 3: Higher Secondary -->
+              <div class="timeline-item position-relative">
+                <div class="timeline-marker">
+                  <i class="fa-solid fa-school"></i>
+                </div>
+                <div class="timeline-content p-4 rounded-4">
+                  <div class="d-flex flex-wrap justify-content-between align-items-center mb-2 gap-2">
+                    <span class="badge timeline-badge">2019 - 2021</span>
+                    <span class="text-accent small fw-semibold"><i class="fa-solid fa-award me-1"></i> Science
+                      Stream</span>
+                  </div>
+                  <h4 class="h5 fw-bold text-light mb-1">Higher Secondary Education (Computer Science)</h4>
+                  <h5 class="h6 text-accent mb-3">Board of Higher Secondary Examination</h5>
+                  <p class="text-light-secondary small leading-relaxed mb-0">
+                    Studied Computer Science, Mathematics, and Physics with high academic performance. Cultivated strong
+                    logical reasoning, programming fundamentals, and problem-solving basics.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         7. CONTACT SECTION
+         ========================================== -->
+    <section id="contact" class="py-5 section-offset">
+      <div class="container py-lg-4">
+        <!-- Section Title Header -->
+        <div class="section-header text-center mb-5">
+          <div class="section-tag mb-2">GET IN TOUCH</div>
+          <h2 class="section-title fw-bold">Let's Connect & <span class="text-gradient">Collaborate</span></h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="section-subtitle text-light-muted mt-3 mx-auto">
+            Have a project in mind, want to discuss an internship opportunity, or simply want to say hello? Drop me a
+            message below!
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-start">
+          <!-- Left Column: Contact Cards -->
+          <div class="col-lg-5">
+            <div class="contact-info-card p-4 p-md-5 rounded-4 h-100">
+              <h3 class="h4 fw-bold text-light mb-2">Contact Information</h3>
+              <p class="text-light-secondary small mb-4">
+                Feel free to reach out directly through email, phone, or my social handles. I usually respond within 24
+                hours.
+              </p>
+
+              <!-- Direct Item 1: Email -->
+              <div class="d-flex align-items-center gap-3 p-3 rounded-3 contact-channel mb-3">
+                <div class="contact-channel-icon">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <div class="small text-light-muted">Email Me Directly</div>
+                  <a href="mailto:shibinshahad@example.com"
+                    class="text-light fw-medium text-decoration-none hover-accent">
+                    shibinshahad@example.com
+                  </a>
+                </div>
+              </div>
+
+              <!-- Direct Item 2: Location -->
+              <div class="d-flex align-items-center gap-3 p-3 rounded-3 contact-channel mb-3">
+                <div class="contact-channel-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <div class="small text-light-muted">Location</div>
+                  <div class="text-light fw-medium">Kerala, India</div>
+                </div>
+              </div>
+
+              <!-- Direct Item 3: Availability -->
+              <div class="d-flex align-items-center gap-3 p-3 rounded-3 contact-channel mb-4">
+                <div class="contact-channel-icon">
+                  <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div>
+                  <div class="small text-light-muted">Employment Status</div>
+                  <div class="text-light fw-medium">Open to Internships & Roles</div>
+                </div>
+              </div>
+
+              <!-- Social Links -->
+              <div class="pt-3 border-top border-dark-subtle">
+                <div class="small text-light-muted text-uppercase tracking-wide mb-3">Follow My Work:</div>
+                <div class="d-flex gap-2">
+                  <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box"
+                    title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box"
+                    title="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-box"
+                    title="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-icon-box"
+                    title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="col-lg-7">
+            <div class="contact-form-card p-4 p-md-5 rounded-4">
+              <!-- Workshop notice card explaining backend requirement -->
+              <div
+                class="alert alert-dark border border-secondary-subtle p-3 rounded-3 mb-4 d-flex align-items-start gap-3">
+                <i class="fa-solid fa-circle-info text-accent fs-5 mt-1"></i>
+                <div class="small text-light-secondary">
+                  <strong class="text-light d-block mb-1">Backend Integration Notice:</strong>
+                  This contact form includes client-side HTML5 & JavaScript validation and a live interactive feedback
+                  handler. In a production website, connect this form to free services like <a
+                    href="https://formspree.io" target="_blank"
+                    class="text-accent text-decoration-underline">Formspree</a>, <a href="https://www.emailjs.com"
+                    target="_blank" class="text-accent text-decoration-underline">EmailJS</a>, or a Python/Node.js API
+                  to receive emails into your inbox.
+                </div>
+              </div>
+
+              <form id="portfolioContactForm" novalidate>
+                <!-- Form Row: Name & Email -->
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <label for="userName" class="form-label text-light small fw-medium">Your Full Name <span
+                        class="text-accent">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text custom-input-addon"><i class="fa-regular fa-user"></i></span>
+                      <input type="text" class="form-control custom-input" id="userName" placeholder="e.g. Alex Johnson"
+                        required>
+                    </div>
+                    <div class="invalid-feedback">Please provide your full name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="userEmail" class="form-label text-light small fw-medium">Your Email Address <span
+                        class="text-accent">*</span></label>
+                    <div class="input-group">
+                      <span class="input-group-text custom-input-addon"><i class="fa-regular fa-envelope"></i></span>
+                      <input type="email" class="form-control custom-input" id="userEmail"
+                        placeholder="name@example.com" required>
+                    </div>
+                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                  </div>
+                </div>
+
+                <!-- Form Row: Subject -->
+                <div class="mb-3">
+                  <label for="userSubject" class="form-label text-light small fw-medium">Subject / Topic <span
+                      class="text-accent">*</span></label>
+                  <div class="input-group">
+                    <span class="input-group-text custom-input-addon"><i class="fa-solid fa-tag"></i></span>
+                    <input type="text" class="form-control custom-input" id="userSubject"
+                      placeholder="e.g. Internship Inquiry or Project Collaboration" required>
+                  </div>
+                  <div class="invalid-feedback">Please enter a subject topic.</div>
+                </div>
+
+                <!-- Form Row: Message -->
+                <div class="mb-4">
+                  <label for="userMessage" class="form-label text-light small fw-medium">Your Message <span
+                      class="text-accent">*</span></label>
+                  <div class="input-group">
+                    <span class="input-group-text custom-input-addon align-items-start pt-3"><i
+                        class="fa-regular fa-message"></i></span>
+                    <textarea class="form-control custom-input" id="userMessage" rows="5"
+                      placeholder="Hi Shibin, I'd like to talk about..." required></textarea>
+                  </div>
+                  <div class="invalid-feedback">Please enter your message (at least 10 characters).</div>
+                </div>
+
+                <!-- Form Submit Button -->
+                <div class="d-grid d-sm-flex justify-content-sm-end">
+                  <button type="submit" id="submitBtn"
+                    class="btn btn-primary-gradient px-4 py-3 rounded-pill fw-semibold shadow-md">
+                    <span class="btn-text"><i class="fa-regular fa-paper-plane me-2"></i> Send Message</span>
+                    <span class="spinner-border spinner-border-sm d-none ms-2" role="status" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </form>
+
+              <!-- Success Alert Box (Hidden by default, shown by JS) -->
+              <div id="formSuccessAlert" class="alert alert-success d-none mt-4 p-3 rounded-3" role="alert">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-circle-check fs-5"></i>
+                  <div>
+                    <strong>Thank you!</strong> Your message has been received in demo mode. In a live deployment, your
+                    backend service will route this directly to Shibin's inbox.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       8. FOOTER
+       ========================================== -->
+  <footer class="footer-section py-5 border-top border-dark-subtle position-relative">
+    <div class="container">
+      <div class="row gy-4 align-items-center justify-content-between">
+        <!-- Footer Brand & Bio -->
+        <div class="col-md-5 text-center text-md-start">
+          <a class="d-inline-flex align-items-center gap-2 text-decoration-none mb-2" href="#hero">
+            <span class="brand-symbol">&lt;/&gt;</span>
+            <span class="brand-text text-light fw-bold fs-5">SHIBIN<span class="accent-text">.DEV</span></span>
+          </a>
+          <p class="text-light-muted small mb-0">
+            Portfolio of Muhammed Shibin Shahad M — Data Science Intern. Dedicated to building intelligent systems and
+            elegant interfaces.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <div class="col-md-4 text-center">
+          <ul class="list-inline mb-0 footer-links small">
+            <li class="list-inline-item"><a href="#hero" class="text-light-muted text-decoration-none">Home</a></li>
+            <li class="list-inline-item text-secondary">•</li>
+            <li class="list-inline-item"><a href="#about" class="text-light-muted text-decoration-none">About</a></li>
+            <li class="list-inline-item text-secondary">•</li>
+            <li class="list-inline-item"><a href="#skills" class="text-light-muted text-decoration-none">Skills</a></li>
+            <li class="list-inline-item text-secondary">•</li>
+            <li class="list-inline-item"><a href="#projects" class="text-light-muted text-decoration-none">Projects</a>
+            </li>
+            <li class="list-inline-item text-secondary">•</li>
+            <li class="list-inline-item"><a href="#contact" class="text-light-muted text-decoration-none">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Footer Socials & Back to Top -->
+        <div class="col-md-3 text-center text-md-end">
+          <div class="d-flex align-items-center justify-content-center justify-content-md-end gap-2">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+              class="social-icon-box social-icon-sm" title="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"
+              class="social-icon-box social-icon-sm" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
+              class="social-icon-box social-icon-sm" title="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="border-secondary-subtle my-4">
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+          <p class="text-light-subtle small mb-0">
+            &copy; <span id="currentYear"></span> <strong>Muhammed Shibin Shahad M</strong>. All rights reserved.
+          </p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="text-light-subtle small mb-0">
+            Designed with <i class="fa-solid fa-heart text-danger"></i> using Bootstrap 5 & Vanilla JS
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       FLOATING BACK TO TOP BUTTON
+       ========================================== -->
+  <button id="backToTopBtn" class="back-to-top shadow-lg" aria-label="Scroll back to top" title="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ==========================================
+       INTERACTIVE PROJECT MODALS
+       ========================================== -->
+  <!-- Modal 1: LMS -->
+  <div class="modal fade" id="projectModalLMS" tabindex="-1" aria-labelledby="projectModalLMSLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content custom-modal-content">
+        <div class="modal-header border-dark-subtle">
+          <h5 class="modal-title fw-bold text-light" id="projectModalLMSLabel">
+            <i class="fa-solid fa-graduation-cap text-accent me-2"></i> Softroniics Learning Management System
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/images/lms.jpg" alt="Softroniics LMS Full View" class="img-fluid rounded-3 mb-3 w-100">
+          <h6 class="text-accent fw-bold mb-2">Project Overview</h6>
+          <p class="text-light-secondary small leading-relaxed">
+            The Softroniics Learning Management System is a centralized platform created to facilitate seamless
+            knowledge sharing, course enrollments, module quizzes, and attendance logging for technical training
+            bootcamps.
+          </p>
+          <h6 class="text-accent fw-bold mb-2">Key Features</h6>
+          <ul class="text-light-secondary small ps-3">
+            <li>Interactive video player with auto module completion detection.</li>
+            <li>Role-based user management (Admin, Instructor, and Student portals).</li>
+            <li>Live analytics dashboard displaying student progress percentages and quiz milestones.</li>
+            <li>Downloadable lecture notes and automated certificate generation.</li>
+          </ul>
+          <h6 class="text-accent fw-bold mb-2">Technologies Used</h6>
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            <span class="badge tech-badge">Python</span>
+            <span class="badge tech-badge">Bootstrap 5</span>
+            <span class="badge tech-badge">JavaScript</span>
+            <span class="badge tech-badge">SQLite</span>
+            <span class="badge tech-badge">HTML5 / CSS3</span>
+          </div>
+        </div>
+        <div class="modal-footer border-dark-subtle">
+          <button type="button" class="btn btn-outline-light-custom btn-sm px-3 rounded-pill"
+            data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary-gradient btn-sm px-4 rounded-pill">
+            <i class="fa-brands fa-github me-1"></i> Visit GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2: AutoResq -->
+  <div class="modal fade" id="projectModalAutoResq" tabindex="-1" aria-labelledby="projectModalAutoResqLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content custom-modal-content">
+        <div class="modal-header border-dark-subtle">
+          <h5 class="modal-title fw-bold text-light" id="projectModalAutoResqLabel">
+            <i class="fa-solid fa-wrench text-cyan me-2"></i> AutoResq - Mechanic Assistance App
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/images/autoresq.jpg" alt="AutoResq App Full View" class="img-fluid rounded-3 mb-3 w-100">
+          <h6 class="text-cyan fw-bold mb-2">Project Overview</h6>
+          <p class="text-light-secondary small leading-relaxed">
+            AutoResq solves roadside vehicle emergencies by connecting stranded motorists with the nearest available
+            certified mechanics, tire shops, and towing vehicles through live geotracking.
+          </p>
+          <h6 class="text-cyan fw-bold mb-2">Key Features</h6>
+          <ul class="text-light-secondary small ps-3">
+            <li>One-tap Emergency SOS dispatch with automatic GPS location broadcast.</li>
+            <li>Real-time mechanic map tracking with estimated time of arrival (ETA).</li>
+            <li>Categorized service requests (Battery jump, Flat tire, Fuel delivery, Towing).</li>
+            <li>In-app direct emergency calling and instant messaging.</li>
+          </ul>
+          <h6 class="text-cyan fw-bold mb-2">Technologies Used</h6>
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            <span class="badge tech-badge">Flutter</span>
+            <span class="badge tech-badge">Dart</span>
+            <span class="badge tech-badge">Firebase Auth & Firestore</span>
+            <span class="badge tech-badge">Google Maps API</span>
+          </div>
+        </div>
+        <div class="modal-footer border-dark-subtle">
+          <button type="button" class="btn btn-outline-light-custom btn-sm px-3 rounded-pill"
+            data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary-gradient btn-sm px-4 rounded-pill">
+            <i class="fa-brands fa-github me-1"></i> Visit GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Blessing -->
+  <div class="modal fade" id="projectModalBlessing" tabindex="-1" aria-labelledby="projectModalBlessingLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content custom-modal-content">
+        <div class="modal-header border-dark-subtle">
+          <h5 class="modal-title fw-bold text-light" id="projectModalBlessingLabel">
+            <i class="fa-solid fa-mosque text-success me-2"></i> Blessing - Islamic Tracker App
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-toggle="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/images/blessing.jpg" alt="Blessing Islamic Tracker Full View"
+            class="img-fluid rounded-3 mb-3 w-100">
+          <h6 class="text-success fw-bold mb-2">Project Overview</h6>
+          <p class="text-light-secondary small leading-relaxed">
+            Blessing is an all-in-one daily spiritual companion application designed with a serene, modern dark UI to
+            help users track prayers, read daily Quranic verses, and find the Qibla direction smoothly.
+          </p>
+          <h6 class="text-success fw-bold mb-2">Key Features</h6>
+          <ul class="text-light-secondary small ps-3">
+            <li>Dynamic prayer times calculation based on GPS latitude and longitude.</li>
+            <li>Animated live Qibla compass using device magnetometer sensor.</li>
+            <li>Daily Quran verse of the day with Arabic calligraphy, translation, and audio.</li>
+            <li>Customizable Adhan audio reminders and offline SQLite prayer logs.</li>
+          </ul>
+          <h6 class="text-success fw-bold mb-2">Technologies Used</h6>
+          <div class="d-flex flex-wrap gap-2 mb-2">
+            <span class="badge tech-badge">Flutter</span>
+            <span class="badge tech-badge">Dart</span>
+            <span class="badge tech-badge">SQLite Local DB</span>
+            <span class="badge tech-badge">Device Sensors API</span>
+            <span class="badge tech-badge">Local Notifications</span>
+          </div>
+        </div>
+        <div class="modal-footer border-dark-subtle">
+          <button type="button" class="btn btn-outline-light-custom btn-sm px-3 rounded-pill"
+            data-bs-dismiss="modal">Close</button>
+          <a href="https://github.com/" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary-gradient btn-sm px-4 rounded-pill">
+            <i class="fa-brands fa-github me-1"></i> Visit GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5 Bundle JS CDN (Includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Custom JavaScript Logic -->
+  <script src="script.js"></script>
+</body>
+
+</html>
